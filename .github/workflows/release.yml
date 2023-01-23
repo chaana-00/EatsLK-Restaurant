@@ -25,13 +25,6 @@ jobs:
     steps:
     - name: Login to EC2
       run: |
-        sudo apt-get update --quiet
-        sudo apt-get install openssh-client -y
-        eval $(ssh-agent -s)
-        echo "${{ secrets.SSH_KEY }}" | tr -d '\r' | ssh-add -
-        mkdir -p ~/.ssh
-        chmod 700 ~/.ssh
-        ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
         ssh -o StrictHostKeyChecking=no ${{ secrets.USER }}@${{ secrets.HOST }} "\
         echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io --username chaana-00 --password-stdin \
         && docker pull ghcr.io/chaana-00/demo:latest \

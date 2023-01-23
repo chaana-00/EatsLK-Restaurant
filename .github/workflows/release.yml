@@ -25,6 +25,8 @@ jobs:
     steps:
     - name: Login to EC2
       run: |
+        chmod 700 ~/.ssh
+        ssh-keyscan -H ${{ secrets.HOST }} >> ~/.ssh/known_hosts
         ssh -o StrictHostKeyChecking=no ${{ secrets.USER }}@${{ secrets.HOST }} "\
         echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io --username chaana-00 --password-stdin \
         && docker pull ghcr.io/chaana-00/demo:latest \

@@ -25,7 +25,7 @@ if(isset($_POST['submit']))
     $subject=$_POST['subject'];
     $message=$_POST['message'];
     
-    $sql="INSERT INTO contact VALUES('$name', '$email' ,'$subject' ,'$message')";
+    $sql="INSERT INTO Contacts VALUES('$name', '$email' ,'$subject' ,'$message')";
     $con->query($sql);
 
 }

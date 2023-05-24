@@ -6,7 +6,7 @@
 
 header('Location: http://localhost/Demo-Static-Website/contacts.html',true);
 
- $con=new mysqli("127.0.0.1","root","","EatsLK-Db");
+ $con=new mysqli("127.0.0.1","root","","EatsLK_DB");
 
  if($con->connect_error){
     echo"failed";

@@ -1,26 +1,31 @@
-<?
-$name  = $_REQUEST["name"];
-$email = $_REQUEST["email"];
-$subject = $_REQUEST["subject"];
-$msg   = $_REQUEST["msg"];
-$to    = "uniqueupgradelab@gmail.com";
-if (isset($email) && isset($name) && isset($msg)) {
-    $email_subject = "This message was sent via Testo (Contact Form)";
-		$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-$headers .= "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n" ;
-$msg     = "From: $name<br/> Email: $email <br/> Subject: $subject <br/> Message: $msg";
-	
-   $mail =  mail($to, $email_subject, $msg, $headers);
-  if($mail)
-	{
-		echo 'success';
-	}
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Contact Details Database Connection Page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-else
-	{
-		echo 'failed';
-	}
+<?php
+
+header('Location: http://localhost/Demo-Static-Website/contacts.html',true);
+
+ $con=new mysqli("127.0.0.1","root","","EatsLK-Db");
+
+ if($con->connect_error){
+    echo"failed";
+}
+else{
+   echo"successfull";
 }
 
-?>
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Submit Contact Details
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(isset($_POST['submit']))
+{
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $subject=$_POST['subject'];
+    $message=$_POST['message'];
+    
+    $sql="INSERT INTO contact VALUES('$name', '$email' ,'$subject' ,'$message')";
+    $con->query($sql);
+
+}

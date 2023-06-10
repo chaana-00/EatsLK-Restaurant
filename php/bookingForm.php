@@ -1,26 +1,33 @@
-<?
-$date = $_REQUEST["date"];
-$name  = $_REQUEST["name"];
-$email = $_REQUEST["email"];
-$phone  = $_REQUEST["phone"];
-$msg   = $_REQUEST["msg"];
-$to    = "uniqueupgradelab@gmail.com";
-if (isset($email) && isset($name) && isset($msg)) {
-    $email_subject = "$name sent you a message via Testo (Booking Form)";
-		$headers = "MIME-Version: 1.0" . "\r\n";
-$headers .= "Content-type:text/html;charset=iso-8859-1" . "\r\n";
-$headers .= "From: ".$name." <".$email.">\r\n"."Reply-To: ".$email."\r\n" ;
-$msg     = "Date: $date <br/> Name: $name <br/> Email: $email <br/> Phone Number: $phone <br/> Message: $msg";
-   $mail =  mail($to, $email_subject, $msg, $headers);
-  if($mail)
-	{
-		echo 'success';
-	}
+<!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Booking Details Database Connection Page
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-else
-	{
-		echo 'failed';
-	}
+<?php
+
+header('Location: http://localhost/Demo-Static-Website/booking.html',true);
+
+ $con=new mysqli("127.0.0.1","root","","EatsLK_DB");
+
+ if($con->connect_error){
+    echo"failed";
+}
+else{
+   echo"successfull";
 }
 
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Submit Booking Details
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+if(isset($_POST['submit']))
+{
+    $name=$_POST['date'];
+    $email=$_POST['name'];
+    $subject=$_POST['email'];
+    $message=$_POST['phone'];
+	$message=$_POST['message'];
+    
+    $sql="INSERT INTO bookings VALUES('$date', '$name', '$email' ,'$phone' ,'$message')";
+    $con->query($sql);
+
+}
 ?>

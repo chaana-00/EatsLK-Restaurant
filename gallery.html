@@ -657,20 +657,19 @@
 								</p>
 
 								<!-- Form -->
-								<form class="newsletter-form">
-
+								<form action="../Demo-Static-Website/php/subscribe.php" method="post" class="newsletter-form">
+												
 									<div class="input-group">
-										<input type="email" class="form-control" placeholder="Your email address"
-											required id="s-email">
+										<input type="email" name="email" class="form-control" placeholder="Your email address" required id="">								
 										<span class="input-group-btn">
-											<button type="submit" class="btn btn-red tra-red-hover">Sign Up</button>
-										</span>
+											<button type="submit" name="submit" class="btn btn-red tra-red-hover">Sign Up</button>
+										</span>										
 									</div>
 
-									<!-- Newsletter Form Notification -->
+									<!-- Newsletter Form Notification -->	
 									<label for="s-email" class="form-notification"></label>
-
-								</form>
+												
+								</form>	
 
 							</div>
 						</div> <!-- END NEWSLETTER FORM -->

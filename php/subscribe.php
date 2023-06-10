@@ -1,10 +1,10 @@
 <!--//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  Contact Details Database Connection Page
+//  Subscribe Details Database Connection Page
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 <?php
 
-header('Location: http://localhost/Demo-Static-Website/contacts.html',true);
+header('Location: http://localhost/Demo-Static-Website/index.html',true);
 
  $con=new mysqli("127.0.0.1","root","","EatsLK_DB");
 
@@ -16,16 +16,13 @@ else{
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//  Submit Contact Details
+//  Submit Subscribe Details
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(isset($_POST['submit']))
 {
-    $name=$_POST['name'];
     $email=$_POST['email'];
-    $subject=$_POST['subject'];
-    $message=$_POST['message'];
-    
-    $sql="INSERT INTO contacts VALUES('$name', '$email' ,'$subject' ,'$message')";
+
+    $sql="INSERT INTO subscribe VALUES('$email')";
     $con->query($sql);
 
 }

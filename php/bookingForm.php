@@ -4,7 +4,7 @@
 
 <?php
 
-header('Location: http://localhost/Demo-Static-Website/booking.html',true);
+header('Location: http://localhost/Demo-Static-Website/booking.php',true);
 
  $con=new mysqli("127.0.0.1","root","","EatsLK_DB");
 
@@ -20,14 +20,14 @@ else{
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 if(isset($_POST['submit']))
 {
-    $name=$_POST['date'];
-    $email=$_POST['name'];
-    $subject=$_POST['email'];
-    $message=$_POST['phone'];
+    $date=$_POST['date'];
+    $name=$_POST['name'];
+    $email=$_POST['email'];
+    $phone=$_POST['phone'];
 	$message=$_POST['message'];
     
     $sql="INSERT INTO bookings VALUES('$date', '$name', '$email' ,'$phone' ,'$message')";
     $con->query($sql);
 
 }
-?>
+// ?>

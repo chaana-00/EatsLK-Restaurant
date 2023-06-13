@@ -7,6 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="author" content="Jthemes" />
+	<meta name="description" content="" />
 	<meta name="keywords"
 		content="Jthemes, Food, Fast Food, Restaurant, Pizzeria, Restaurant Menu, Pizza, Burger, Sushi, Steak, Grill, Snack">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -173,17 +174,16 @@
 
 						<!-- DROPDOWN MENU -->
 						<!-- <li><a href="#">Shop</a>
-							<ul>
-								<li><a href="product-single.html">Single Product</a></li>
-								<li><a href="cart.html">Shopping Cart</a></li>
-							</ul>
-						</li> -->
+	                			<ul>
+	                            	<li><a href="product-single.html">Single Product</a></li>
+									<li><a href="cart.html">Shopping Cart</a></li>
+	                            </ul>
+	                		</li> -->
 
 						<!-- DROPDOWN MENU -->
 						<li><a href="#">Blog</a>
 							<ul>
-								<li><a href="blog-listing.html">Blog Listing</a></li>
-								<li><a href="single-post.html">Single Post</a></li>
+								<li><a href="event-1.html">Events</a></li>
 							</ul>
 						</li>
 
@@ -201,7 +201,8 @@
 
 						<!-- BASKET ICON -->
 						<li class="basket-ico ico-30">
-							<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=inushiayodhya@gmail.com&display=1">
+							<a
+								href="https://www.paypal.com/cgi-bin/webscr?cmd=_cart&business=inushiayodhya@gmail.com&display=1">
 								<span class="ico-holder"><span class="flaticon-shopping-bag"></span> <em
 										class="roundpoint"></em></span>
 							</a>
@@ -229,7 +230,7 @@
 
 		<!-- PAGE HERO
 			============================================= -->
-		<div id="contacts-page" class="page-hero-section division">
+		<div id="booking-page" class="page-hero-section division">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
@@ -242,9 +243,8 @@
 										<div class="breadcrumb-nav">
 											<nav aria-label="breadcrumb">
 												<ol class="breadcrumb">
-													<li class="breadcrumb-item"><a href="demo-1.html">Home</a></li>
-													<li class="breadcrumb-item active" aria-current="page">Contact Us
-													</li>
+													<li class="breadcrumb-item"><a href="index.html">Home</a></li>
+													<li class="breadcrumb-item active" aria-current="page">Driver Details</li>
 												</ol>
 											</nav>
 										</div>
@@ -253,7 +253,7 @@
 							</div>
 
 							<!-- Title -->
-							<h2 class="h2-xl">Contact Us</h2>
+							<h2 class="h2-xl">Restaurant Delivery Drivers</h2>
 
 						</div>
 					</div>
@@ -264,156 +264,146 @@
 
 
 
-		<!-- CONTACTS-5
+		<!-- BOOKING-2
 			============================================= -->
-		<section id="contacts-5" class="wide-80 contacts-section division">
+		<div id="booking-2" class="wide-70 booking-section division">
 			<div class="container">
-
-
-				<!-- CONTACT INFO
-					============================================= -->
 				<div class="row">
-					<div class="col-xl-10 ms-auto me-auto">
-						<div class="row">
 
 
-							<!-- LOCATION -->
-							<div class="col-md-4">
-								<div class="cbox-5">
+					<!-- BOOKING FORM -->
+					<div class="col-lg-10 col-xl-8 ms-auto me-auto">
+						<div class="form-holder">
 
-									<!-- Title -->
-									<h5 class="h5-lg">Location</h5>
-
-									<!-- Address -->
-									<p class="p-md">,50A</p>
-									<p class="p-md">,Beach Road</p>
-									<p class="p-md">Matara</p>
-
-								</div>
+							<div>
+								<form action="" class="search-form" >
+									<input type="text" class="form-control" name="search1" placeholder="NIC Number" required value="<?php if(isset($_GET['search'])){echo $_GET['search']; } ?>">
+									<div class="col-lg-12 text-center mx-auto"><br>
+										<button type="submit" name="search"
+											class="btn btn-md btn-red tra-red-hover submit">View Driver
+											Details</button>
+									</div>
+								</form><br>
 							</div>
 
-
-							<!-- QUICK CONTACTS -->
-							<div class="col-md-4">
-								<div class="cbox-5">
-
-									<!-- Title -->
-									<h5 class="h5-lg">Working Hours</h5>
-
-									<!-- Text -->
-									<p class="p-md">Mon: Fri: 9:00AM - 10:00PM</p>
-									<p class="p-md">Saturday: 10:00AM - 8:30PM</p>
-									<p class="p-md">Sunday: 12:00PM - 5:00PM</p>
-
-								</div>
-							</div>
-
-
-							<!-- WORKING HOURS -->
-							<div class="col-md-4">
-								<div class="cbox-5">
-
-									<!-- Title -->
-									<h5 class="h5-lg">Working Hours</h5>
-
-									<!-- Title -->
-									<p class="p-md">Phone: +9476 822 85 44</p>
-									<p class="p-md">Fax: +9441 562 06 66</p>
-									<p class="p-md">Email: <a href="mailto:hello@eatslk.com"
-											class="yellow-color">hello@eatslk.com</a></p>
-
-								</div>
-							</div>
-
-
-						</div>
-					</div>
-				</div> <!-- END CONTACT INFO -->
-
-
-
-				<!-- GOOGLE MAP
-					============================================= -->
-				<div class="row">
-					<div class="col-md-12">
-						<div id="gmap">
-							<div class="google-map">
-								<iframe
-									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.367800763324!2d80.54968199999999!3d5.9439445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae13929f97a32d1%3A0x61e2ae1d9d82e80b!2sBeach%20Rd%20Matara%2C%20Matara!5e0!3m2!1sen!2slk!4v1682694254863!5m2!1sen!2slk"
-									width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-									referrerpolicy="no-referrer-when-downgrade"></iframe>
-							</div>
-						</div>
-					</div>
-				</div> <!-- END GOOGLE MAP -->
-
-
-				<!-- SECTION TITLE -->
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title mb-40 text-center">
-
-							<!-- Title 	-->
-							<h2 class="h2-xl">Get in Touch</h2>
+							<h2 align="center">Search Driver Details</h2>
+							<div class="result-table table-responsive mt-5 table-bordered">
+								<table class="table table-striped">
+									<thead>
+										<tr>
+											<th>Name</th>
+											<th>NIC</th>
+											<th>Phone</th>
+											<th>Vehicle Number</th>
+											<th>Note</th>
+										</tr>
+									</thead>
+									<tbody>
+									<?php 
+									$con = mysqli_connect("localhost","root","","eatslk_db");
+									if(isset($_GET['search']))
+									{
+									$filtervalues = $_GET['search1'];
+									$query = "SELECT * FROM drivers where NIC='$filtervalues'";
+									$query_run = mysqli_query($con, $query);
+									if(mysqli_num_rows($query_run) > 0)
+									{
+									foreach($query_run as $items)
+									{
+									?>
+										<tr>
+											<td>
+												<?= $items['name']; ?>
+											</td>
+											<td>
+												<?= $items['NIC']; ?>
+											</td>
+											<td>
+												<?= $items['phone']; ?>
+											</td>
+											<td>
+												<?= $items['VehicleNumber']; ?>
+											</td>
+											<td>
+												<?= $items['note']; ?>
+											</td>
+										</tr>
+										<?php
+									}
+									}
+									else
+									{
+									?>
+										<tr>
+											<td colspan="6">No Record Found</td>
+										</tr>
+										<?php
+									}
+									}
+									?>
+									</tbody>
+								</table>
+							</div><br><br><br>
 
 							<!-- Text -->
-							<p class="p-xl">Get touch with us
+							<p class="p-xl text-center">
+								Fill in the form below to Add Driver Details or give us a call <a href="tel:0768228544">+94768228544</a>
 							</p>
 
-						</div>
-					</div>
-				</div>
-
-
-				<!-- CONTACT FORM -->
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="form-holder">
-							<form action="../Demo-Static-Website/php/contactForm.php" method="post" id="contactForm" name="" class="row contact-form">
+							<!-- Form -->
+							<form action="../Demo-Static-Website/php/driverForm.php" method="post" name=""
+								class="row contact-form">
 
 								<!-- Form Input -->
-								<div class="col-md-12 col-lg-6">
-									<input type="text" name="name" class="form-control name" placeholder="Your Name*">
+								<div class="col-lg-6">
+									<input type="text" name="name" class="form-control name" placeholder="Driver Name*"
+										required>
 								</div>
 
 								<!-- Form Input -->
-								<div class="col-md-12 col-lg-6">
-									<input type="email" name="email" class="form-control email"
-										placeholder="Email Address*" required>
+								<div class="col-lg-6">
+									<input type="text" name="NIC" class="form-control NIC"
+										placeholder="NIC Number*" required>
 								</div>
 
 								<!-- Form Input -->
-								<div class="col-md-12">
-									<input type="text" name="subject" class="form-control subject"
-										placeholder="?What's this about">
+								<div class="col-lg-6">
+									<input type="tel" name="phone" class="form-control phone"
+										placeholder="Phone Number*" required>
+								</div>
+
+								<!-- Form Input -->
+								<div class="col-lg-6">
+									<input type="text" name="VehicleNumber" class="form-control Vehicle Number"
+										placeholder="Vehicle Number*" required>
 								</div>
 
 								<!-- Form Textarea -->
 								<div class="col-md-12">
-									<textarea name="message" class="form-control message" rows="6"
-										placeholder="... Your Message "></textarea>
+									<textarea name="note" class="form-control note" rows="4"
+										placeholder="Note ..."></textarea>
 								</div>
 
 								<!-- Form Button -->
-								<div class="col-md-12 mt-5 text-right">
-									<button type="submit" name="submit" class="btn btn-md btn-red tra-red-hover submit">Send
-										Message</button>
+								<div class="col-md-12 mt-10">
+									<button type="submit" name="submit"
+										class="btn btn-md btn-red tra-red-hover submit">Add Driver
+										</button>
 								</div>
 
-								<!-- Form Message -->
-								<!-- <div class="col-md-12 contact-form-msg text-center">
-									<div class="sending-msg"><span class="loading"></span></div>
-								</div> -->
+								<!-- Form Message
+					                <div class="col-md-12 booking-form-msg text-center">
+					                	<div class="sending-msg"><span class="loading"></span></div>
+					                </div>	 -->
 
-							</form>
+							</form> <!-- End Form -->
 
 						</div>
-					</div>
-				</div> <!-- END CONTACT FORM -->
+					</div> <!-- END BOOKING FORM -->
 
-
+				</div> <!-- End row -->
 			</div> <!-- End container -->
-		</section> <!-- END CONTACTS-5 -->
+		</div> <!-- END BOOKING-2 -->
 
 
 
@@ -434,7 +424,8 @@
 							<h2>save up to 20%</h2>
 
 							<!-- Text -->
-							<p class="p-md">Here touch with our mobile application
+							<p class="p-md">ENJOY GREAT OFFERS. ON THE BURGER KING APP. Click the button below to
+								download on your mobile device. ORDER PERFECTION. FOR COLLECTION
 							</p>
 
 							<!-- Store Badges -->
@@ -472,50 +463,76 @@
 
 
 
-		<!-- FOOTER-1
+		<!-- FOOTER-4
 			============================================= -->
-		<footer id="footer-1" class="bg-lightgrey footer division">
-			<div class="container">
+		<footer id="footer-4" class="footer division">
+			<div class="container grey-color">
+
+
+				<!-- FOOTER CONTENT -->
 				<div class="row">
 
 
 					<!-- FOOTER INFO -->
-					<div class="col-md-5 col-lg-4 col-xl-4">
+					<div class="col-xl-3">
 						<div class="footer-info mb-40">
 
 							<!-- Footer Logo -->
 							<div class="footer-logo"><img src="images/logo-01.png" alt="footer-logo" /></div>
 
-							<!-- Footer Copyright -->
-							<p>&copy; 2023 EastsLK. All Rights Reserved | <a href="Administration.html"> UUL</a></p>
+							<!-- Text -->
+							<p>Discover real fantacy of meals</p>
 
 						</div>
 					</div>
 
 
 					<!-- FOOTER CONTACTS -->
-					<div class="col-md-7 col-lg-4 col-xl-5">
+					<div class="col-md-6 col-lg-4 col-xl-3">
 						<div class="footer-contacts mb-40">
 
+							<!-- Title -->
+							<h5 class="h5-sm">Order Now</h5>
+
 							<!-- Address -->
-							<p class="p-xl mt-10">EastsLK</p>
-							<p class="p-xl">50A, Beach Road, Matara</p>
+							<p>50A Beach Rd</p>
+							<p>Matara</p>
 
 							<!-- Contacts -->
-							<p class="p-lg foo-email">Email: <a
-								href="mailto:eatslk@mail.com">hello@eatslk.com</a></p>
-						<p class="p-lg">Call Now: <span class="yellow-color"><a
-									href="tel:+94768228544">+94768228544</a></span></p>
+							<p class="foo-email txt-500 mt-15"><a href="mailto:eatslk@mail.com">hello@eatslk.com</a></p>
+							<p><span class="yellow-color"><a href="tel:123456789">9476822854+</a></span></p>
 
 						</div>
 					</div>
 
 
-					<!-- FOOTER INSTAGRAM -->
+					<!-- FOOTER INFO -->
+					<div class="col-md-6 col-lg-4 col-xl-3">
+						<div class="footer-info mb-30">
+
+							<!-- Title -->
+							<h5 class="h5-sm">Working Hours</h5>
+
+							<!-- Text -->
+							<p>Find us in fastest way</p>
+
+							<!-- Text -->
+							<p class="mt-15">Mon-Fri: <span>9:00AM - 10:00PM</span></p>
+							<p>Saturday: <span>10:00AM - 8:30PM</span></p>
+							<p>Sunday: <span>12:00PM - 5:00PM</span></p>
+
+						</div>
+					</div>
+
+
+					<!-- FOOTER IMAGES -->
 					<div class="col-md-12 col-lg-4 col-xl-3">
 						<div class="footer-img mb-40">
 
-							<!-- Images -->
+							<!-- Title -->
+							<h5 class="h5-sm">Instagram Feed</h5>
+
+							<!-- Instagram Images -->
 							<ul class="text-center clearfix">
 								<li><a href="#" target="_blank"><img class="insta-img" src="images/instagram/img-01.jpg"
 											alt="insta-img"></a></li>
@@ -535,9 +552,45 @@
 					</div> <!-- END FOOTER IMAGES -->
 
 
-				</div> <!-- End row -->
+				</div> <!-- END FOOTER CONTENT -->
+
+
+				<!-- BOTTOM FOOTER -->
+				<div class="bottom-footer">
+					<div class="row d-flex align-items-center">
+
+
+						<!-- FOOTER COPYRIGHT -->
+						<div class="col-md-5 col-lg-6">
+							<div class="footer-copyright">
+								<p>&copy; 2023 EastsLK. All Rights Reserved</p>
+							</div>
+						</div>
+
+
+						<!-- BOTTOM FOOTER LINKS -->
+						<div class="col-md-7 col-lg-6">
+							<ul class="bottom-footer-list text-right clearfix">
+								<li>
+									<p class="first-list-link"><a href="#"><i class="fab fa-facebook-f"></i>
+											Facebook</a></p>
+								</li>
+								<li>
+									<p><a href="#"><i class="fab fa-twitter"></i> Twitter</a></p>
+								</li>
+								<li>
+									<p><a href="#"><i class="fab fa-youtube"></i> YouTube</a></p>
+								</li>
+							</ul>
+						</div>
+
+
+					</div> <!-- End row -->
+				</div> <!-- END BOTTOM FOOTER -->
+
+
 			</div> <!-- End container -->
-		</footer> <!-- END FOOTER-1 -->
+		</footer> <!-- END FOOTER-4 -->
 
 
 
@@ -572,33 +625,6 @@
 	<script defer src="js/changer.js"></script>
 
 
-	<!--Firebase-->
-	<script type="module">
-		// Import the functions you need from the SDKs you need
-		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-		import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-analytics.js";
-		// TODO: Add SDKs for Firebase products that you want to use
-		// https://firebase.google.com/docs/web/setup#available-libraries
-	   
-		// Your web app's Firebase configuration
-		// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-		const firebaseConfig = {
-		  apiKey: "AIzaSyDoYJ3oE9BQOc7SO1rifpi05FbMLgytMLc",
-		  authDomain: "eatslkweb.firebaseapp.com",
-		  databaseURL: "https://eatslkweb-default-rtdb.firebaseio.com",
-		  projectId: "eatslkweb",
-		  storageBucket: "eatslkweb.appspot.com",
-		  messagingSenderId: "809733616238",
-		  appId: "1:809733616238:web:6ed2d10628d83521332c7f",
-		  measurementId: "G-0YY1QTNDDR"
-		};
-	   
-		// Initialize Firebase
-		const app = initializeApp(firebaseConfig);
-		const analytics = getAnalytics(app);
-	  </script>
-
-	<script src="../Demo-Static-Website/app.js"></script>
 
 </body>
 

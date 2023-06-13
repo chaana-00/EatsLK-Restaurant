@@ -264,14 +264,14 @@
 
 
 
-		<!-- BOOKING-2
+		<!-- ADD DRIVER DETAILS
 			============================================= -->
 		<div id="booking-2" class="wide-70 booking-section division">
 			<div class="container">
 				<div class="row">
 
 
-					<!-- BOOKING FORM -->
+					<!-- ADD DRIVER DETAILS FORM -->
 					<div class="col-lg-10 col-xl-8 ms-auto me-auto">
 						<div class="form-holder">
 
@@ -384,10 +384,17 @@
 										placeholder="Note ..."></textarea>
 								</div>
 
-								<!-- Form Button -->
+								<!-- Submit Button -->
 								<div class="col-md-12 mt-10">
 									<button type="submit" name="submit"
 										class="btn btn-md btn-red tra-red-hover submit">Add Driver
+										</button>
+								</div>
+
+								<!-- Update Button -->
+								<div class="col-md-12 mt-10">
+									<button type="submit" name="update"
+										class="btn btn-md btn-red tra-red-hover submit">Update Driver
 										</button>
 								</div>
 
@@ -399,11 +406,11 @@
 							</form> <!-- End Form -->
 
 						</div>
-					</div> <!-- END BOOKING FORM -->
+					</div> <!-- END ADD DRIVER DETAILS FORM -->
 
 				</div> <!-- End row -->
 			</div> <!-- End container -->
-		</div> <!-- END BOOKING-2 -->
+		</div> <!-- END ADD DRIVER DETAILS -->
 
 
 
@@ -563,7 +570,7 @@
 						<!-- FOOTER COPYRIGHT -->
 						<div class="col-md-5 col-lg-6">
 							<div class="footer-copyright">
-								<p>&copy; 2023 EastsLK. All Rights Reserved</p>
+							<p>&copy; 2023 EastsLK. All Rights Reserved | <a href="Administration.html"> UUL</a></p>
 							</div>
 						</div>
 

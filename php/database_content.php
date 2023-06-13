@@ -123,5 +123,38 @@ $conn->close();
 echo"<br><br><br>";
 ?>
 </table>
+
+<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+Table 4 - Drivers table
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<table border="1pt">
+<h3>The database of Driver Details</h3>
+    <tr>
+        <th>name</th>
+        <th>NIC</th>
+        <th>phone</th>
+        <th>VehicleNumber</th>
+        <th>note</th>
+    </tr>
+<?php
+$conn = mysqli_connect("localhost", "root", "", "eatslk_db");
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT * FROM drivers";
+$result = $conn->query($sql);
+if ($result->num_rows > 0) {
+    // output data of each row
+    //echo"The database of Driver Details";
+    while($row = $result->fetch_assoc()) {
+        echo "</td><td>" . $row["name"] . "</td><td>" . $row["NIC"] . "</td><td>" . $row["phone"] . "</td><td>" . $row["VehicleNumber"] ."</td><td>" . $row["note"] . "</td></tr>";
+    }
+    echo "</table>";
+} else { echo "0 results"; }
+$conn->close();
+echo"<br><br><br>";
+?>
+</table>
 </body>
 </html>

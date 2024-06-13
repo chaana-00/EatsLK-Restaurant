@@ -15,4 +15,4 @@ Pre-requisites:
 
 # Gallery
 
-![Winway](https://user-images.githubusercontent.com/89802304/223206220-080c1bed-52ae-44d0-88bd-c9ba5f564b2c.jpg)
+![EatsLK]([https://user-images.githubusercontent.com/89802304/223206220-080c1bed-52ae-44d0-88bd-c9ba5f564b2c.jpg](https://github.com/chaana-00/EatsLK-Restaurant/blob/master/images/Admin/EatsLK%20Restaurant.png))
